@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-calc_data = pd.read_csv("calculated_index.csv")
+calc_data = pd.read_csv("calculated_index2.csv")
 calc_data['Date'] = pd.to_datetime(calc_data['Date'])
 
 actual_data = pd.read_csv("nifty_pharma_2025.csv",skiprows=3,names=["Date","Close"])
